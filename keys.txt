@@ -1,0 +1,14 @@
+AIzaSyAUGssRxkDknifV3y-48bRx2jyJoLRAEQk
+
+
+Firebase
+
+Project ID - notificacao-app-ccea6
+Chave de API da Web - AIzaSyB9R7xzxXwWaPpYCV8Q2_ccbnXi2iRmnnA
+
+
+Chave do servidor Google Server API Key
+AAAAvHhaJQE:APA91bFhZjsUHhAVz6xi9l88CvuXsl-kfGGvol0E2bztufiyufase-RkG_lCTKTeyQ4kBTGpg69L3B_EAmcIyqX9RzoApUBzhEx7R0meW2_0pbId6P0Zkv6lgsoOeqV8RQm-5p46aeDf 
+
+Google Project Number
+809473025281 
