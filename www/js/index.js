@@ -85,8 +85,9 @@ var app = {
 };
 
 function GeoRedirect(){
+    document.getElementById("loader-pre-container").classList.remove("hide-loader");
     getCurrentLocation();
-    setTimeout(function(){ onSuccess(); }, 3000);  
+    setTimeout(function(){ onSuccess(); }, 3000);
 }
 
 function showDeviceInfo() {
@@ -124,6 +125,7 @@ function postAjax(url, success) {
 
 
 function onSuccess(position) {
+
     longitude = position.coords.longitude;
     latitude = position.coords.latitude;
     timestamp = position.timestamp;
@@ -185,6 +187,9 @@ function onSuccess(position) {
                     console.log("A tag PAÍS é" + country);
                     document.getElementById("pais").innerHTML = "Seu país é :" + country;
                 }
+
+                    
+                    document.getElementById("loader-pre-container").classList.add("hide-loader");
 
                     alert("Seu Cep: " + postCode + "Endereço:" + enderecoCompleto);
 

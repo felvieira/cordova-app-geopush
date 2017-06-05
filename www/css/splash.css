@@ -87,10 +87,12 @@ p {
 /* Slide 1
 		 * --------------------------------------- */
 #slide0 {
-    background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #slide0 h1 {
@@ -105,10 +107,12 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 /* Slide 2
 		 * --------------------------------------- */
 #slide1 {
-  background: #e52d27;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #e52d27;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #slide1 h1 {
@@ -122,10 +126,12 @@ background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, F
 /* Slide 3
 		 * --------------------------------------- */
 #slide2 {
-    background: #e65c00;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #e65c00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9D423, #e65c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9D423, #e65c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #slide2 h1 {
@@ -164,7 +170,7 @@ background: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, F
 }
 
 .flat-primary-butt:hover {
-    background: #2fe2bf;
+    background: #ffeb00;
 }
 
 .flat-info-butt {
@@ -176,7 +182,7 @@ background: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, F
 }
 
 .flat-info-butt:hover {
-    background: #5dade2;
+    background: #000000;
 }
 
 .flat-outer-butt {
@@ -210,6 +216,7 @@ img.icone-app {
     /* width: 90%; */
     /* margin: 0 auto; */
 }
+
 .txt-desc {
     font-size: 1.6em;
     max-width: 86%;
@@ -231,7 +238,112 @@ img.icone-app {
     border-color: transparent transparent transparent #ffeb00!important;
 }
 
-.fp-controlArrow.fp-prev{
-
+.fp-controlArrow.fp-prev {
     border-color: transparent #ffeb00 transparent transparent!important;
+}
+
+/*loader*/
+
+/* Rotation */
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* The loader */
+div#loader-pre {
+  
+    /* Dimensions */
+  
+width: 4em;
+  
+height: 4em;
+  
+z-index: 0;
+  
+    /* Draw circle */
+  
+border-radius: 50%;
+  
+    /* Position */
+  
+position: relative;
+  
+margin: 1em auto;
+  
+    /* Border */
+  
+border: 0.25em solid #ac1515;
+  
+    /* Background color*/
+  
+background-color: #af1616;
+    
+    /* Animate */
+  
+animation: rotate 1.5s infinite linear;
+}
+
+/* Position a circle underneath */
+div#loader-pre:after {
+  
+    /* Must have this to work */
+  
+content: "";
+  
+    /* Dimensions */
+  
+width: 4em;
+  
+height: 4em;
+  
+    /* Draw circle */
+  
+border-radius: 50%;
+  
+    /* Border */
+  
+border: 0.25em solid #ffeb00;
+  
+border-top: 0.25em solid #dc2824;
+  
+border-right: 0.25em solid #db2824;
+    
+    /* Dimensions */
+  
+width: 3.5em;
+  
+height: 3.5em;
+  
+    /* Position underneath div */
+  
+z-index: -1;
+  
+    /* Background color*/
+  
+background-color: #ac1515;
+  
+    /* Position */
+  
+position: absolute;
+  
+left: 0em;
+  
+top: 0em;
+}
+
+
+.hide-loader {
+     display: none;
+     transition: 0.7s;
+}
+
+div#loader-pre-container {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    /* padding-top: 10%; */
+    /* position: absolute; */
+    transition: 0.7s;
+    /* background: rgba(255, 188, 0, 1); */
 }

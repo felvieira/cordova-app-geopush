@@ -4,7 +4,8 @@
     "displayName": "HelloCordova",
     "cordova": {
         "platforms": [
-            "android"
+            "android",
+            "windows"
         ],
         "plugins": {
             "cordova-plugin-firebase": {},
@@ -17,15 +18,19 @@
                 "XWALK_MULTIPLEAPK": "true"
             },
             "onesignal-cordova-plugin": {},
-            "cordova-plugin-geolocation": {}
+            "cordova-plugin-geolocation": {},
+            "cordova-plugin-device": {}
         }
     },
     "dependencies": {
         "cordova-android": "^5.1.1",
         "cordova-plugin-crosswalk-webview": "~2.3.0",
+        "cordova-plugin-device": "~1.1.5",
         "cordova-plugin-firebase": "~0.1.20",
         "cordova-plugin-geolocation": "~2.4.2",
         "cordova-plugin-whitelist": "1",
-        "onesignal-cordova-plugin": "~2.0.11"
+        "cordova-windows": "^5.0.0",
+        "onesignal-cordova-plugin": "~2.0.11",
+        "phone": "^1.0.10"
     }
 }
