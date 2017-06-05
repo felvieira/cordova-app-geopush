@@ -9,15 +9,19 @@
     </platform>
     <platform name="wp8">
     </platform>
+    
     <platform name="windows">
     </platform>
     <name>Gourmex</name>
+
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
+
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Felipe
     </author>
+
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://www.gourmex.com/*" />
